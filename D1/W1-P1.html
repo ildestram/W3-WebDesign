@@ -117,6 +117,7 @@ ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
       }
 
       /* Crea un selettore per selezionare il bottone nuovi che trovi in basso */
+      /* Come faccio a selezionarlo se in html è disabled? */
 
       /* Crea un selettore per selezionare il secondo link del footer */
       footer p a:nth-child(2) {
@@ -497,6 +498,11 @@ ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
 
     <a href="#" class="float-right mb-3 mr-3">Torna su</a>
     <script>
+      window.onload = function () {
+        let removeTwitter = document.getElementsByTagName("li")[1];
+        removeTwitter.parentNode.removeChild(removeTwitter);
+      };
+
       /* JS Exercises should go here */
 
       // EXTRA Crea con JavaScript la funzionalità per rimuovere il link "twitter" sotto alla sezione "Altro" nell'elemento "aside". Deve avvenire al caricamento della pagina, automticamente.
