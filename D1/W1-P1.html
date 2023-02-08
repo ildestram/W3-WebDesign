@@ -368,7 +368,7 @@ ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
           <div class="blog-post">
             <h2 class="blog-post-title">Ancora un blog post</h2>
             <p class="blog-post-meta">
-              23 dicembre 2019 di <a href="#">Iacopo</a>
+              23 dicembre 2019 di <a class="name-author" href="#">Iacopo</a>
             </p>
 
             <p>
@@ -402,7 +402,7 @@ ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
           <div class="blog-post">
             <h2 class="blog-post-title">Nuove funzionalità</h2>
             <p class="blog-post-meta">
-              14 dicembre 2019 di <a href="#">Christian</a>
+              14 dicembre 2019 di <a class="name-author" href="#">Christian</a>
             </p>
 
             <p>
@@ -503,6 +503,22 @@ ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
         removeTwitter.parentNode.removeChild(removeTwitter);
       };
 
+      document.addEventListener("click", function (event) {
+        // nel momento in cui l'utente clicca sul link che ha come stringa Continua a leggere, l'evento click che una volta cliccato Continua a leggere il blog-post viene eliminato
+        if (event.target.innerText === "Continua a leggere") {
+          event.target.parentNode.remove();
+        }
+      });
+
+      let nameAuthor = document.getElementsByClassName("name-author");
+      for (let i = 0; i < nameAuthor.length; i++) {
+        nameAuthor[i].addEventListener("mouseover", function () {
+          // console.log(`Author: ${nameAuthor}`); // Ricordati che in questo modo non puoi fare, perchè in questo caso ti verrebbe fuori tutto l'oggetto
+          // console.log("Author: " + this.innerText); // Se fai in questo modo ti viene fuori anche la data, non solo il nome dell'autore
+          // Ho provato ad aggiungere una classe solamente al nome dell'autore
+          console.log("Author: " + this.nameAuthor);
+        }); // Perchè mi viene undefined?
+      }
       /* JS Exercises should go here */
 
       // EXTRA Crea con JavaScript la funzionalità per rimuovere il link "twitter" sotto alla sezione "Altro" nell'elemento "aside". Deve avvenire al caricamento della pagina, automticamente.
