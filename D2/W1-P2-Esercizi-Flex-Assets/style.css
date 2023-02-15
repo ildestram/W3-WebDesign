@@ -1,0 +1,123 @@
+ul li {
+  display: inline;
+  margin: 10vh;
+  flex-wrap: nowrap;
+  color: rgb(132, 8, 8);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+ul li:nth-child(3) {
+  /* padding-right: 25px; */
+  padding: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar {
+  background-color: rgb(238, 222, 193);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 50px;
+}
+
+li {
+  background-color: rgb(229, 215, 28);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+li img {
+  width: 20px;
+  padding-right: 25px;
+}
+
+.inline {
+  position: relative;
+  margin-left: 10vh;
+}
+
+.flex {
+  position: absolute;
+  left: 35vh;
+  top: 50vh;
+  /* display: flex; */
+}
+
+button {
+  margin-left: 15vh;
+  background-color: rgb(229, 215, 28);
+  cursor: pointer;
+}
+
+.card-container {
+  background-color: rgb(238, 222, 193);
+  width: 50vh;
+  margin-top: 30px;
+  overflow: hidden;
+  border-radius: 20%;
+}
+
+.card-container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+button {
+  border-radius: 12px;
+  border-style: none;
+  box-sizing: border-box;
+  margin-left: 10vw;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 15px;
+}
+
+.second-container {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 20px;
+  background-color: rgb(238, 222, 193);
+  border-radius: 20px;
+}
+
+.box img {
+  width: 400px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.recipe-content {
+  margin-left: 15px;
+}
+
+.recipe-content p {
+  color: rgb(132, 12, 12);
+}
+
+.recipe-content p:first-child {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 480px) {
+  .box {
+    position: relative;
+    top: 50vh;
+  }
+
+  .recipe-content {
+    position: absolute;
+    margin-right: 20px;
+  }
+
+  .second-container {
+    height: 700px;
+  }
+}
