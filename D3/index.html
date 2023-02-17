@@ -12,6 +12,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -67,6 +68,161 @@
         </div>
       </div>
     </nav>
+
+    <div class="card">
+      <div class="card-body cardgradient">Gli album della mia vita</div>
+    </div>
+    <div class="card-group">
+      <div class="card">
+        <img
+          src="./images/71-Y-3usHkL._AC_SL1500_.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Arctic Monkeys</h5>
+          <p class="card-text">
+            Davvero qualcuno non ha mai ascoltato questo album?
+          </p>
+          <button
+            type="button"
+            class="btn btn-primary"
+            style="
+              --bs-btn-padding-y: 0.25rem;
+              --bs-btn-padding-x: 0.5rem;
+              --bs-btn-font-size: 0.75rem;
+            "
+          >
+            Ascoltalo subito!
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="./images/512hW0tgA+L._AC_SX466_.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Moderat</h5>
+          <p class="card-text">Sembra un rave party ma giuro che non lo è!</p>
+          <button
+            type="button"
+            class="btn btn-primary"
+            style="
+              --bs-btn-padding-y: 0.25rem;
+              --bs-btn-padding-x: 0.5rem;
+              --bs-btn-font-size: 0.75rem;
+            "
+          >
+            Ascoltalo subito!
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="./images/71274uOsBUL._AC_SL1500_.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Fletwood Mac</h5>
+          <p class="card-text">Un classico! Ora c'è pure il film.</p>
+          <button
+            type="button"
+            class="btn btn-primary"
+            style="
+              --bs-btn-padding-y: 0.25rem;
+              --bs-btn-padding-x: 0.5rem;
+              --bs-btn-font-size: 0.75rem;
+            "
+          >
+            Ascoltalo subito!
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body cardsuck">Album che dovremo dimenticare</div>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./images/1d_cd-cover_custom-afceb2b33b277ace0e8c92a0d65d409550bdcb24-s1100-c50.jpg"
+            class="d-block mx-auto"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-light bg-dark w-25 mx-auto">One Direction</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./images/81A4KqJc98L._AC_SX466_.jpg"
+            class="d-block mx-auto"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-light bg-dark w-25 mx-auto">Justin Bieber</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./images/disumano-fedez-francesco-vezzoli-png-1635859076.png"
+            class="d-block mx-auto"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-light bg-dark w-25 mx-auto">Fedez</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

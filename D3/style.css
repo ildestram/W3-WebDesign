@@ -1,0 +1,37 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+img {
+  height: 300px;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+}
+
+.card {
+  margin-top: 30px;
+}
+
+.cardgradient {
+  background: linear-gradient(to left, rgb(15, 230, 162), rgb(31, 207, 98));
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn {
+  background: linear-gradient(to left, green, rgb(49, 46, 46));
+}
+
+.cardsuck {
+  background: linear-gradient(to left, red, rgb(226, 92, 34));
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.carousel {
+  margin-top: 20px;
+}
