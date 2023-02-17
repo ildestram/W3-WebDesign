@@ -142,6 +142,70 @@
         </div>
       </div>
     </div>
+    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+      <a class="navbar-brand" href="#"
+        >Ti spiego perchè dovresti ascoltare questi album!</a
+      >
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading1">First</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading2">Second</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >Dropdown</a
+          >
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#scrollspyHeading3">Third</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#scrollspyHeading4">Fourth</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#scrollspyHeading5">Fifth</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      class="scrollspy-example bg-body-tertiary p-3 rounded-2"
+      tabindex="0"
+    >
+      <h4 id="scrollspyHeading1">Arctic Monkeys</h4>
+      <p>
+        Si tratta del quinto album del gruppo musicale britannico Arctic
+        Monkeys. Pubblicato nel 2013 dalla Domino Records, il primo singolo è
+        stato R U Mine? pubblicato il 27 febbraio 2012 seguito poi da Do I Wanna
+        Know? il 19 giugno 2013. Dovresti ascoltarlo perchè, in fondo, chi non
+        ha mai ascoltato questo album?
+      </p>
+      <h4 id="scrollspyHeading2">Moderat</h4>
+      <p>
+        I Moderat sono un supergruppo di musica elettronica tedesco, formatosi a
+        Berlino nel 2002. Sembra un rave party ma giuro che non lo è!
+      </p>
+      <h4 id="scrollspyHeading3">Fletwood Mac</h4>
+      <p>
+        C'è qualcosa da aggiungere? I Fletwood Mac sono un gruppo musicale rock
+        anglo statunitense, che ha goduto di grande successo in tutto il mondo
+        vendendo più di 100 milioni di album. Ora hanno fatto anche un film,
+        quindi non hai scampo!
+      </p>
+    </div>
     <div class="card">
       <div class="card-body cardsuck">Album che dovremo dimenticare</div>
     </div>
@@ -177,7 +241,7 @@
           />
           <div class="carousel-caption d-none d-md-block">
             <h5 class="text-light bg-dark w-25 mx-auto">One Direction</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <p class="bg-danger w-25 mx-auto">RED FLAG.</p>
           </div>
         </div>
         <div class="carousel-item">
@@ -188,7 +252,7 @@
           />
           <div class="carousel-caption d-none d-md-block">
             <h5 class="text-light bg-dark w-25 mx-auto">Justin Bieber</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <p class="bg-danger w-25 mx-auto">RED FLAG.</p>
           </div>
         </div>
         <div class="carousel-item">
@@ -199,7 +263,7 @@
           />
           <div class="carousel-caption d-none d-md-block">
             <h5 class="text-light bg-dark w-25 mx-auto">Fedez</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <p class="bg-danger w-25 mx-auto">RED FLAG.</p>
           </div>
         </div>
       </div>
@@ -222,6 +286,17 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    <footer class="bg-light text-center text-lg-start foot">
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(118, 117, 117, 0.2)"
+      >
+        © 2020 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
